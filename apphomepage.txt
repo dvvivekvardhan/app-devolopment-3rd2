@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E COMMERCE/home page</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link href='https://fonts.googleapis.com/css?family=Faster One' rel='stylesheet'>
+    <style>
+        * {
+            box-sizing: border-box
+        }
+
+        body {
+            font-family: Verdana, sans-serif;
+            margin: 0
+        }
+
+        .mySlides {
+            display: none
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin-top: 0px;
+        }
+
+        /* Next & previous buttons */
+        .prev,
+        .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+        /* On hover, add a black background color with a little bit see-through */
+        .prev:hover,
+        .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
+
+        /* Number text (1/3 etc) */
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+
+        /* The dots/bullets/indicators */
+        .dot {
+            cursor: pointer;
+            height: 10px;
+            width: 10px;
+            margin: 0 2px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.6s ease;
+        }
+
+        .active,
+        .dot:hover {
+            background-color: #ffffff;
+            border: 2px solid red;
+        }
+
+        /* Fading animation */
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+
+        @keyframes fade {
+            from {
+                opacity: .4
+            }
+
+            to {
+                opacity: 1
+            }
+        }
+
+        /* On smaller screens, decrease text size */
+        @media only screen and (max-width: 300px) {
+
+            .prev,
+            .next,
+            .text {
+                font-size: 11px
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="hedder">
+            <div class="logo">
+                <img src="images/logo.png" alt="">
+            </div>
+            <div class="name">
+                <p>GetZap</p>
+            </div>
+
+            <div class="navbar">
+                <div class="navitems">
+                    <ul class="navlist">
+                        <li class="list-items"><a href="#">HOME</a></li>
+                        <li class="list-items"><a href="#">OTHER</a></li>
+                        <li class="list-items"><a href="#">ABOUT</a></li>
+                        <li class="list-items"><a href="#">CONTACT</a></li>
+                    </ul>
+                </div>
+
+                <div class="searchbar">
+                    <div class="search">
+                        <input type="text" id="search" name="search" class="searchinput"
+                            placeholder="what do you want?">
+                        <img height="30px" width="30px" src="images/searchicon.png"
+                            style="float: right; margin-top: 2px; margin-right: 1px; margin-bottom: 3px; border: 0px black solid;"
+                            alt="">
+
+                    </div>
+                </div>
+
+                <div class="cart">
+                    <img src="images/cart.jpeg" alt="" class="cartimg">
+                </div>
+
+                <div class="signupbar">
+                    <form action="/action_page.php">
+                        <label for="cars"></label>
+                        <select name="cars" id="cars">
+                            <option value="volvo"><img src="images/cart.jpeg" alt=""></option>
+                            <option value="saab">Saab</option>
+                            <option value="opel">Opel</option>
+                            <option value="audi">Audi</option>
+                        </select>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="content">
+            <div class="sidebar">
+                <ul class="sidenav">
+                    <li class="side-items"><a href="#">Mens Fashion</a></li>
+                    <li class="side-items"><a href="#">Womens Fashion</a></li>
+                    <li class="side-items"><a href="#">Kids Ware</a></li>
+                    <li class="side-items"><a href="#">Electronics</a></li>
+                    <li class="side-items"><a href="#">Household Things</a></li>
+                    <li class="side-items"><a href="#">Toys & Playables</a></li>
+                    <li class="side-items"><a href="#">Gym Equipment</a></li>
+                    <li class="side-items"><a href="#">Beauty & More</a></li>
+                    <li class="side-items"><a href="#">Sports</a></li>
+                </ul>
+            </div>
+
+            <div class="main-img">
+
+                <body>
+
+                    <div class="slideshow-container">
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">1 / 3</div>
+                            <img src="https://www.shutterstock.com/image-vector/colorful-discount-sale-podium-special-600nw-2055955985.jpg"
+                                height="325px" width="800px">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">2 / 3</div>
+                            <img src="https://exchange4media.gumlet.io/news-photo/99004.sale.jpg" height="325px"
+                                width="800px">
+                        </div>
+
+                        <div class="mySlides fade">
+                            <div class="numbertext">3 / 3</div>
+                            <img src="https://st2.depositphotos.com/1807998/7627/v/450/depositphotos_76279353-stock-illustration-super-sale-online-only-fashion.jpg"
+                                height="325px" width="800px">
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1)">?</a>
+                        <a class="next" onclick="plusSlides(1)">?</a>
+
+                        <br>
+                        <div style="text-align:center">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                        </div>
+                    </div>
+
+                    <script>
+                        let slideIndex = 1;
+                        showSlides(slideIndex);
+
+                        function plusSlides(n) {
+                            showSlides(slideIndex += n);
+                        }
+
+                        function currentSlide(n) {
+                            showSlides(slideIndex = n);
+                        }
+
+                        function showSlides(n) {
+                            let i;
+                            let slides = document.getElementsByClassName("mySlides");
+                            let dots = document.getElementsByClassName("dot");
+                            if (n > slides.length) { slideIndex = 1 }
+                            if (n < 1) { slideIndex = slides.length }
+                            for (i = 0; i < slides.length; i++) {
+                                slides[i].style.display = "none";
+                            }
+                            for (i = 0; i < dots.length; i++) {
+                                dots[i].className = dots[i].className.replace(" active", "");
+                            }
+                            slides[slideIndex - 1].style.display = "block";
+                            dots[slideIndex - 1].className += " active";
+                        }
+                    </script>
+
+                </body>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="fotter">
+
+    </div>
+
+</body>
+
+</html>
